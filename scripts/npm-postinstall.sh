@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -z "${SKIP_COMPILE_PROTO}" ]]; then
+if [[ "${NO_SCHEMA}" != true ]]; then
   git submodule update
   bash ./scripts/compile-protoc.sh
 else

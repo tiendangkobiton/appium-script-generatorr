@@ -1,5 +1,5 @@
 #!/bin/bash
 
-if [[ -z "${SKIP_COMPILE_PROTO}" ]]; then
+if [[ "${NO_SCHEMA}" != true ]]; then
   git submodule init
 fi
